@@ -242,4 +242,4 @@ void app_main(void)
     vTaskSuspend(xLedLentoHandle);
 
     printf("=== SISTEMA INICIADO ===\n");
-}
+} 
