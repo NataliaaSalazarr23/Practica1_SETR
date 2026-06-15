@@ -1,3 +1,13 @@
+/*
+ * Este programa implementa un sistema multitarea en un ESP32 utilizando FreeRTOS.
+ * El sistema inicia con un LED parpadeando en modo rapido. Al detectar la
+ * pulsacion de un botón, cambia a un modo lento donde el LED reduce su frecuencia
+ * de parpadeo y se habilita la lectura de un sensor analogico mediante el ADC.
+ * Despues de 5 segundos en este estado, el sistema regresa automaticamente al
+ * modo rapido. Adicionalmente, se monitorea el uso de memoria y la actividad
+ * del procesador mediante tareas de supervision e Idle Hook.
+ */
+
 #include <stdio.h>
 #include <stdbool.h>
 
