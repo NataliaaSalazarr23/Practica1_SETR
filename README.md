@@ -29,7 +29,7 @@ vTaskMonitor tiene mayor prioridad porque se encarga de detectar el botón y con
 El uso de volatile no evita accesos simultáneos. Si varias tareas modifican una variable al mismo tiempo pueden ocurrir condiciones de carrera y obtener resultados incorrectos. Una sección crítica protege el acceso a recursos compartidos para que solo una tarea pueda utilizarlos temporalmente.
 
 
-## Conclusion  
+## Conclusión  
 
 En esta práctica se implementó un sistema multitarea en ESP32 utilizando FreeRTOS, donde se controlaron dos modos de operación para un LED: rápido y lento. A través de un botón se realizó el cambio de estado, mientras que en el modo lento se activó la lectura de un sensor analógico mediante el ADC. Además, se aplicó un temporizador para regresar automáticamente al modo rápido después de 5 segundos. Con esta práctica se reforzó el uso de tareas, prioridades, retardos, suspensión y reanudación de procesos, así como el monitoreo de recursos del sistema mediante heap, stack e Idle Hook.
 
