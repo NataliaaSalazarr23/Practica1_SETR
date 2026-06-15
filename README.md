@@ -1,8 +1,12 @@
 # Practica1_SETR
 Práctica 1 de Sistemas embebidos en tiempo real
 
-Emilio Hernández Santana 10095
+Emilio Hernández Santana 10095  
+
 Natalia Marian Salazar Domínguez 10073
+
+
+##Preguntas
 
 1. ¿Por qué la variable g_estado debe declararse como volatile? ¿Qué ocurre si se omite esa palabra clave?
 
@@ -23,3 +27,6 @@ vTaskMonitor tiene mayor prioridad porque se encarga de detectar el botón y con
 5. ¿Qué riesgo existe al leer una variable volatile desde dos tareas distintas sin protección? Investiga el concepto de sección crítica.
 
 El uso de volatile no evita accesos simultáneos. Si varias tareas modifican una variable al mismo tiempo pueden ocurrir condiciones de carrera y obtener resultados incorrectos. Una sección crítica protege el acceso a recursos compartidos para que solo una tarea pueda utilizarlos temporalmente.
+
+
+##Conclusion 
